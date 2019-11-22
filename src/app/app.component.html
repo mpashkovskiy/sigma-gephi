@@ -1,0 +1,15 @@
+<div id="graph"></div>
+<div id="info">
+  Nodes: {{nodesCount}}<br/>
+  Edges: {{edgesCount}}
+</div>
+<div id="search">
+  <div>
+    <input
+      id="name"
+      type="text"
+      placeholder="Node name"
+      (change)="search($event)">
+  </div>
+  <pre>{{selectedNode | json}}</pre>
+</div>
